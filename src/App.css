@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* .container{
+    width:1400px;
+    margin:0px;
+} */
+
+.bg-footer{
+  background-color: #A2A2A2;
+}
+.btn-primary{
+    @apply md:px-14 py-3 font-bold opacity-100 text-white md:text-lg rounded-lg bg-primary text-base px-10
+}
+.btn-primary1{
+    @apply lg:px-16 lg:py-3 text-center font-semibold opacity-100 text-white lg:text-lg rounded-lg bg-secondary tracking-widest px-9 py-2.5 text-sm
+}
+.btn-secondary{
+    @apply px-10 py-3.5 font-bold opacity-100 text-white text-lg
+}
+.btn-tertiary{
+    @apply font-bold
+}
+
+.input-one{
+    @apply lg:h-14 lg:w-[524px] rounded-lg h-11 w-[300px]
+}
+
+.heading{
+    @apply md:text-3xl font-semibold text-black opacity-100 font-pop text-xl
+}
+
+select{
+    appearance: none;
+    outline: none;
+}
+
+input{
+    outline: none;
+}
+
+.card{
+    @apply relative text-white rounded-lg card-shadow;
+}
+.card-shadow{
+    box-shadow: 0px 0px 8px #00000029;
+}
+.card-star{
+    @apply absolute right-2 top-2 px-2 py-1 rounded-md text-white bg-secondary text-[8px];
+}
+
+.card-info{
+    @apply px-4 pt-6 bg-[#3F3F47] rounded-b-lg;
+}
+.card-tittle{
+    @apply font-bold text-sm;
+}
+.card-subtittle{
+    @apply pt-1.5 text-sm;
+}
+.card-div-btn{
+    @apply flex justify-between items-center py-9 text-sm md:text-base lg:text-sm xl:text-base;
+}
+.card-btn{
+    @apply btn-tertiary md:px-10 md:py-3.5 bg-secondary text-white rounded-lg px-6 py-2;
+}
+.card-btn1{
+    @apply btn-tertiary md:px-10 md:py-3.5 border border-black rounded-lg  px-4 py-1.5 lg:px-4 lg:py-2 xl:px-10 xl:py-3.5;
+}
+.card-info1{
+    @apply px-4 pt-6 rounded-b-lg text-black border-b-2;
+}
+
+.slick-slide .current-div{
+    transition: all 0.1s ease-in-out;  
+}
+.slick-current .current-div{
+    background-color: #3F3F47;
+    color: white;
+}
+.slick-current .current-div .card-btn1{
+    @apply btn-tertiary md:px-10 md:py-3.5 bg-secondary text-base text-white rounded-lg border-0 px-4 py-1.5 lg:px-4 lg:py-2 xl:px-10 xl:py-3.5;
+}
+.slick-current .current-div .fa-check-circle{
+    @apply text-secondary;
+}
+
+.multiselect{
+    @apply !w-full bg-white border-0;
+}
+
+.multiselect .msl-input {
+    @apply !w-full md:py-3 py-2 border-0;
+}
+.multiselect .msl-chip{
+    @apply bg-[#A2A2A2] text-base font-semibold
+}
+.multiselect .msl-chip-delete{
+    @apply bg-white w-0 h-3
+}
+.multiselect .msl-close-icn{
+    @apply font-[#A2A2A2] p-0 m-0
+}
